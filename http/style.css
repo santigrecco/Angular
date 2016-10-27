@@ -1,0 +1,15 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.button {
+  margin: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+}

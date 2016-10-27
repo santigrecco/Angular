@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <title>controllers</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js" charset="utf-8"></script>
+    <script src="controller.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller="FirstController">
+    <input ng-model="comment" placeholder="comment">
+    <input ng-model="name"  placeholder="name">
+    <button ng-click="addComment()">Add comment</button>
+    <h3>Comments</h3>
+    <ul>
+      <li ng-repeat="com in comments" >
+        {{com.comment}} - <strong>{{com.username}}</strong>
+      </li>
+    </ul>
+  </body>
+</html>
